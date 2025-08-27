@@ -41,26 +41,17 @@
   --font-more-pictures: 'Inter', sans-serif;
   --caption-font-size: 12px;
   --caption-font-line-height: 1.33;
-  --text-color: #000;
+  --text-color: #fff;
   --caption-color: #69735d;
   --disabled-text-color: #9ca197;
   --toggle-color: #b2b9a9;
   --disabled-color: #e4e8df;
-  --card-input-color: #fff;
-  --text-link-button-pressed-color: #508826;
-  --accent-color: #6e54b5;
+  --accent-color: #f6b254;
   --button-color: #fff;
-  --background-color: #9389a9;
-  --footer-color: #fff;
+  --form-color: #313653;
+  --background-color: #1a2035;
   --alarm-color: #e0796e;
   --error-color: #bf3920;
-  --tag-business-color: #eee7f7;
-  --tag-creativity-color: #f7e7f2;
-  --tag-languages-color: #ebe5c5;
-  --tag-education-color: #e7f2f6;
-  --tag-home-color: #f7ebe5;
-  --tag-health-color: #e9f7e7;
-  --tag-plus-color: #e8ecf7;
 }
 
 *,
@@ -134,3 +125,11 @@ button {
   font-weight: inherit;
   line-height: inherit;
 }
+
+figure {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+

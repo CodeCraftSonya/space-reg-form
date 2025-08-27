@@ -1,8 +1,6 @@
-.form {
+.registrationForm {
   padding: 40px;
-  border-radius: 12px;
-  inline-size: 556px;
-  background-color: var(--card-input-color);
+  background-color: var(--form-color);
 }
 
 .elementList {

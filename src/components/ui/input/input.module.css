@@ -10,7 +10,7 @@
   align-items: flex-end;
   border: 0.0625rem solid var(--caption-color);
   border-radius: 0.75rem;
-  background-color: var(--card-input-color);
+  background-color: transparent;
   padding: 11px;
   min-width: 200px;
   max-width: 32.9375rem;
@@ -30,6 +30,7 @@
   caret-color: var(--text-link-button-pressed-color);
   color: var(--text-color);
   font-size: 16px;
+  background-color: transparent;
 }
 
 .input::placeholder {
