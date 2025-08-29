@@ -14,11 +14,8 @@ export const Default: Story = {
   args: {
     isOpen: true,
     onClose: () => alert('Модалка закрыта'),
-    children: (
-      <div style={{ padding: '20px' }}>
-        <h2>Заголовок модалки</h2>
-        <p>Это содержимое модального окна.</p>
-      </div>
-    )
+    title: 'Форма успешно отправлена',
+    message: 'Спасибо!',
+    icon: '/icons/Done.svg'
   }
 };

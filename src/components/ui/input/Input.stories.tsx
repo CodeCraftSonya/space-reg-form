@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import Input from './input.tsx';
+import Input from './input';
 
 const meta: Meta<typeof Input> = {
   title: 'UI/Input',
@@ -32,6 +32,6 @@ export const WithInfo: Story = {
 
 export const WithIcons: Story = {
   args: {
-    rightIcon: <img src='/icons/chevron-down.svg' alt='иконка' width={16} />
+    rightIcon: <img src='/icons/eye.svg' alt='иконка' width={16} />
   }
 };
