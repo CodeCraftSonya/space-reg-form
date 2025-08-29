@@ -12,7 +12,7 @@ function App() {
                       alt="Живописный горный пейзаж на фоне формы регистрации"
                   />
               </div>
-              <main>
+              <main className="main">
                   <RegisterForm/>
               </main>
           </div>

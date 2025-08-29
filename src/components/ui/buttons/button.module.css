@@ -14,7 +14,7 @@
   background-color: var(--accent-color);
   color: var(--form-color);
   font-weight: 600;
-  box-shadow: 0 0 12px 4px #F6B25480;
+  box-shadow: 0 0 12px 4px var(--primary-shadow-color);
 }
 
 .primary:disabled {
@@ -27,7 +27,7 @@
 
 .secondary {
   background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--border-color);
   color: var(--button-color);
 }
 

@@ -5,6 +5,7 @@ import Button from '../buttons/button';
 import { type RegistrationFormType, registrationSchema } from '../../../utils/schemas/registrationSchemas';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { Modal } from "../../modal/modal";
 
 
 export const RegisterForm = () => {
@@ -24,17 +25,20 @@ export const RegisterForm = () => {
   });
 
   const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const onSubmit = (e: React.FormEvent) => {
-    console.log('Форма отправлена', e)
+      e.preventDefault();
+      console.log("Форма отправлена", e);
+      setIsModalOpen(true);
   };
 
   return (
       <div className={styles.registrationForm}>
           <h1 className="registration__title">Создайте аккаунт</h1>
-          <p className="registration__text">Уже есть аккаунт? <a className={styles.registrationLink}
-                                                                 href="">Войти</a></p>
+          <p className="registration__text">Уже есть аккаунт? <a className={styles.registrationLink} href="">Войти</a></p>
           <form className={styles.form} onSubmit={onSubmit}>
-
               <div className={styles.elementList}>
                   <div className={styles.nameWrapper}>
                       <Input
@@ -90,7 +94,7 @@ export const RegisterForm = () => {
                       rightIcon={
                           <button
                               type='button'
-                              onClick={() => setShowPassword(!showPassword)}
+                              onClick={() => setShowConfirmPassword(!showConfirmPassword)}
                               className={styles.buttonIcon}
                           >
                               <img src='/icons/eye.svg' alt='Показать пароль' />
@@ -132,6 +136,8 @@ export const RegisterForm = () => {
               </div>
 
           </form>
+
+          <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(!isModalOpen)} title='Форма успешно отправлена' message='Спасибо!' icon='/icons/Done.svg'/>
       </div>
   );
 };
