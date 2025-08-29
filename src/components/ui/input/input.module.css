@@ -10,7 +10,7 @@
   align-items: flex-end;
   border: 0.0625rem solid var(--caption-color);
   border-radius: 0.75rem;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.2);
   padding: 11px;
   min-width: 200px;
   max-width: 32.9375rem;
@@ -38,7 +38,7 @@
   font-weight: 400;
   padding-left: 6px;
   letter-spacing: 0.02em;
-  color: var(--caption-color);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .label {
@@ -63,12 +63,6 @@
 
 .errorText {
   color: var(--error-color);
-  font-size: var(--caption-font-size);
-  line-height: var(--caption-font-line-height);
-}
-
-.infoText {
-  color: var(--text-color);
   font-size: var(--caption-font-size);
   line-height: var(--caption-font-line-height);
 }

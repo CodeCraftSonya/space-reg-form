@@ -31,7 +31,7 @@ export const RegisterForm = () => {
   return (
       <div className={styles.registrationForm}>
           <h1 className="registration__title">Создайте аккаунт</h1>
-          <p className="registration__text">Уже есть аккаунт? <a className="registration__link"
+          <p className="registration__text">Уже есть аккаунт? <a className={styles.registrationLink}
                                                                  href="">Войти</a></p>
           <form className={styles.form} onSubmit={onSubmit}>
 
@@ -44,6 +44,7 @@ export const RegisterForm = () => {
                           placeholder='Введите ваше имя'
                           {...register('name')}
                           error={errors.name?.message}
+                          autoComplete="off"
                       ></Input>
                       <Input
                           id='surnameInput'

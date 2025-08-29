@@ -1,4 +1,7 @@
 .registrationForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   padding: 40px;
   background-color: var(--form-color);
 }
@@ -49,3 +52,14 @@
   margin-block-start: 32px;
   inline-size: 100%;
 }
+
+.nameWrapper {
+  display: flex;
+  gap: 16px;
+}
+
+.registrationLink {
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
