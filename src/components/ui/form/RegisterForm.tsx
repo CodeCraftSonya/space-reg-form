@@ -76,7 +76,7 @@ export const RegisterForm = () => {
                               onClick={() => setShowPassword(!showPassword)}
                               className={styles.buttonIcon}
                           >
-                              <img src='/eye.svg' alt='Показать пароль' />
+                              <img src='/icons/eye.svg' alt='Показать пароль' />
                           </button>
                       }
                   ></Input>
@@ -93,7 +93,7 @@ export const RegisterForm = () => {
                               onClick={() => setShowPassword(!showPassword)}
                               className={styles.buttonIcon}
                           >
-                              <img src='/eye.svg' alt='Показать пароль' />
+                              <img src='/icons/eye.svg' alt='Показать пароль' />
                           </button>
                       }
                   ></Input>
@@ -122,11 +122,11 @@ export const RegisterForm = () => {
 
               <div className={styles.elementList}>
                   <Button type='secondary' className={styles.button}>
-                      <img src='/Google.svg' alt='Google' className={styles.icon} />
+                      <img src='/icons/Google.svg' alt='Google' className={styles.icon} />
                       <span>Продолжить с Google</span>
                   </Button>
                   <Button type='secondary' className={styles.button}>
-                      <img src='/Apple.svg' alt='Apple' className={styles.icon} />
+                      <img src='/icons/Apple.svg' alt='Apple' className={styles.icon} />
                       <span>Продолжить с Apple</span>
                   </Button>
               </div>

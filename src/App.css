@@ -35,4 +35,12 @@ main {
   justify-content: center;
 }
 
+@media (max-width: 1024px) {
+
+  .pageImageWrapper{
+    display: none;
+  }
+}
+
+
 

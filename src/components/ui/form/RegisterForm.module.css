@@ -63,3 +63,18 @@
   cursor: pointer;
 }
 
+@media (max-width: 1024px) {
+  .nameWrapper{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 510px) {
+
+  .registrationForm{
+    padding: 20px;
+  }
+}
+
+
+

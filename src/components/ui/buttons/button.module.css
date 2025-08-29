@@ -17,11 +17,6 @@
   box-shadow: 0 0 12px 4px #F6B25480;
 }
 
-.primary:hover {
-  background-color: var(--background-color);
-  border-color: var(--background-color);
-}
-
 .primary:disabled {
   background-color: var(--disabled-color);
   border-color: var(--disabled-color);
@@ -32,12 +27,8 @@
 
 .secondary {
   background-color: transparent;
-  border: 1px solid var(--background-color);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   color: var(--button-color);
-}
-
-.secondary:hover {
-  background-color: var(--background-color);
 }
 
 .fullWidth {
