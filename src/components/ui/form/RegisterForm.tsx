@@ -6,6 +6,10 @@ import { type RegistrationFormType, registrationSchema } from '../../../utils/sc
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Modal } from "../../modal/modal";
+import eye from '../../../icons/eye.svg';
+import google from '../../../icons/Google.svg';
+import apple from '../../../icons/Apple.svg';
+import done from '../../../icons/Done.svg';
 
 
 export const RegisterForm = () => {
@@ -80,7 +84,7 @@ export const RegisterForm = () => {
                               onClick={() => setShowPassword(!showPassword)}
                               className={styles.buttonIcon}
                           >
-                              <img src='/icons/eye.svg' alt='Показать пароль' />
+                              <img src={eye} alt='Показать пароль' />
                           </button>
                       }
                   ></Input>
@@ -97,7 +101,7 @@ export const RegisterForm = () => {
                               onClick={() => setShowConfirmPassword(!showConfirmPassword)}
                               className={styles.buttonIcon}
                           >
-                              <img src='/icons/eye.svg' alt='Показать пароль' />
+                              <img src={eye} alt='Показать пароль' />
                           </button>
                       }
                   ></Input>
@@ -126,18 +130,18 @@ export const RegisterForm = () => {
 
               <div className={styles.elementList}>
                   <Button type='secondary' className={styles.button}>
-                      <img src='/icons/Google.svg' alt='Google' className={styles.icon} />
+                      <img src={google} alt='Google' className={styles.icon} />
                       <span>Продолжить с Google</span>
                   </Button>
                   <Button type='secondary' className={styles.button}>
-                      <img src='/icons/Apple.svg' alt='Apple' className={styles.icon} />
+                      <img src={apple} alt='Apple' className={styles.icon} />
                       <span>Продолжить с Apple</span>
                   </Button>
               </div>
 
           </form>
 
-          <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(!isModalOpen)} title='Форма успешно отправлена' message='Спасибо!' icon='/icons/Done.svg'/>
+          <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(!isModalOpen)} title='Форма успешно отправлена' message='Спасибо!' icon={done}/>
       </div>
   );
 };

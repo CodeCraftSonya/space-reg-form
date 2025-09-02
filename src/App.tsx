@@ -1,5 +1,6 @@
 import './App.css'
 import { RegisterForm } from './components/ui/form/RegisterForm'
+import mountain from './images/mountain.jpg'
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
           <div className="contentWrapper">
               <div className="pageImageWrapper">
                   <img
-                      src="/images/mountain.jpg"
+                      src={mountain}
                       className="pageImage"
                       alt="Живописный горный пейзаж на фоне формы регистрации"
                   />

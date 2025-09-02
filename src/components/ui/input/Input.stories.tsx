@@ -32,6 +32,6 @@ export const WithInfo: Story = {
 
 export const WithIcons: Story = {
   args: {
-    rightIcon: <img src='/icons/eye.svg' alt='иконка' width={16} />
+    rightIcon: <img src='/src/icons/eye.svg' alt='иконка' width={16} />
   }
 };
